@@ -6,4 +6,8 @@ echo "After checking the above output for any problems, start a new iTerm sessio
 echo "Rebooting is only necessary for keyboard repeat settings to work."
 
 echo
+echo "You might want to add some additional customizations, which can be found in "
+echo
+echo "after-setup-customization.sh"
 
+echo
