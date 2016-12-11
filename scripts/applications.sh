@@ -17,6 +17,9 @@ brew cask install marked
 brew cask install go2shell
 brew cask install vlc
 brew cask install the-unarchiver
+brew cask install tunnelblick
+brew cask install cyberduck
+brew cask install veracrypt
 
 # Terminals
 
@@ -26,6 +29,7 @@ brew cask install iterm2
 
 brew cask install google-chrome
 brew cask install firefox
+brew cask install torbrowser
 
 brew tap caskroom/versions
 brew cask install google-chrome-canary
