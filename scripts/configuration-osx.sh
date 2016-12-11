@@ -1,6 +1,9 @@
 echo
 echo 'Customizing OS X configuration'
 
+EMAIL_ADDRESS=$1
+PHONE_NUMBER=$2
+
 
 # hide the dock
 defaults write com.apple.dock autohide -bool true
@@ -50,6 +53,9 @@ defaults write com.apple.TextEdit RichText -int 0
 # Open and save files as UTF–8 in TextEdit
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
+
+echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $USER at $EMAIL_ADDRESS ($PHONE_NUMBER)."
 
 killall Finder
 killall Dock
