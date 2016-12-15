@@ -12,6 +12,7 @@ brew cask install google-drive
 brew cask install dropbox
 brew cask install cheatsheet
 brew cask install macpass
+brew cask install keepassx
 brew cask install bettertouchtool
 brew cask install marked
 brew cask install go2shell
@@ -20,6 +21,7 @@ brew cask install the-unarchiver
 brew cask install tunnelblick
 brew cask install cyberduck
 brew cask install veracrypt
+brew cask install mirrordisplays
 
 # Terminals
 
@@ -50,11 +52,10 @@ brew install macvim
 brew cask install skitch
 brew cask install zeplin
 
-
+# Other
 
 brew cask install evernote
 brew cask install kindle
-brew cask install kaleidoscope
 brew cask install google-play-music-desktop-player
 
 # Emulation tools
