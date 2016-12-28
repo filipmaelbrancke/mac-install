@@ -20,7 +20,6 @@ brew cask install vlc
 brew cask install the-unarchiver
 brew cask install tunnelblick
 brew cask install cyberduck
-brew cask install veracrypt
 brew cask install mirrordisplays
 
 # Terminals
@@ -62,6 +61,13 @@ brew cask install google-play-music-desktop-player
 
 #brew cask install virtualbox
 
-# Usefull scripts
+# Useful scripts
 
 brew install youtube-dl
+
+
+brew cask install veracrypt
+# VeraCrypt config: by default VeraCrypt will not alter the timestamp of the volume after it has been created
+# This will prevent Cloud syncing from recognizing changes to the volume, and prevent synchronization
+# So: 'uncheck' "Preserve modification timestamp of file containers"
+cp files/veracrypt-configuration.xml ~/Library/Application Support/VeraCrypt/Configuration.xml

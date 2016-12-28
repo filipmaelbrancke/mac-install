@@ -6,3 +6,4 @@ brew install maven
 brew install gradle
 brew install scala
 brew install sbt
+brew install typesafe-activator
