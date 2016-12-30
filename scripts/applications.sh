@@ -38,6 +38,8 @@ brew cask install google-chrome-canary
 # Communication
 
 brew cask install slack
+brew cask install franz
+#brew cask install nylas-n1
 
 # Text Editors
 
@@ -50,6 +52,11 @@ brew install macvim
 
 brew cask install skitch
 brew cask install zeplin
+
+# DB
+brew cask install sequel-pro
+brew cask install robomongo
+brew cask install sqlitebrowser
 
 # Other
 
@@ -70,4 +77,4 @@ brew cask install veracrypt
 # VeraCrypt config: by default VeraCrypt will not alter the timestamp of the volume after it has been created
 # This will prevent Cloud syncing from recognizing changes to the volume, and prevent synchronization
 # So: 'uncheck' "Preserve modification timestamp of file containers"
-cp files/veracrypt-configuration.xml ~/Library/Application Support/VeraCrypt/Configuration.xml
+cp files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"

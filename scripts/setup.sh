@@ -38,7 +38,7 @@ source ${MY_DIR}/java.sh
 source ${MY_DIR}/android.sh
 source ${MY_DIR}/applications.sh
 source ${MY_DIR}/fonts.sh
-
+source ${MY_DIR}/docker.sh
 
 source ${MY_DIR}/configurations.sh
 

@@ -18,3 +18,11 @@ open /Applications/Spectacle.app
 echo "Configuring FlyCut"
 loginitems -a "Flycut" -p "/Applications/Flycut.app" # Start at login
 open /Applications/Flycut.app
+
+echo "Installing QuickLook extensions"
+brew cask install qlstephen  # QLStephen is a QuickLook plugin to view plain text files without a file extension
+#brew cask install webpquicklook # WebP
+brew cask install quicklookapk # Preview Android APK files
+#brew cask install qlcolorcode # Renders source code with syntax highlighting
+#brew cask install qlmarkdown # Renders a preview of a Markdown file
+#brew cask install quicklook-json # Renders a preview of a Json file
