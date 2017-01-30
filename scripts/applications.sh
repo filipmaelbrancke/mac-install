@@ -13,6 +13,7 @@ brew cask install dropbox
 brew cask install cheatsheet
 brew cask install macpass
 brew cask install keepassx
+brew cask install keeweb
 brew cask install bettertouchtool
 brew cask install marked
 brew cask install go2shell
@@ -41,12 +42,13 @@ brew cask install slack
 brew cask install franz
 #brew cask install nylas-n1
 
-# Text Editors
+# (Text) Editors
 
 brew cask install macdown
 brew cask install sublime-text
 brew cask install atom
 brew install macvim
+brew cask install xmind
 
 # Graphics tools
 
