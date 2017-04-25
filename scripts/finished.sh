@@ -11,3 +11,8 @@ echo
 echo "after-setup-customization.sh"
 
 echo
+echo "You might also want to do some additional changes through the System Preferences app, documented in "
+echo
+echo "extra.md"
+
+echo

@@ -32,6 +32,7 @@ brew cask install iterm2
 brew cask install google-chrome
 brew cask install firefox
 brew cask install torbrowser
+brew cask install brave
 
 brew tap caskroom/versions
 brew cask install google-chrome-canary
@@ -55,6 +56,10 @@ brew cask install xmind
 brew cask install skitch
 brew cask install zeplin
 
+# Screen recorder
+
+brew cask install kap
+
 # DB
 brew cask install sequel-pro
 brew cask install robomongo
@@ -65,10 +70,15 @@ brew cask install sqlitebrowser
 brew cask install evernote
 brew cask install kindle
 brew cask install google-play-music-desktop-player
+brew cask install knockknock
 
 # Emulation tools
 
 #brew cask install virtualbox
+
+# Servers
+
+brew install rabbitmq
 
 # Useful scripts
 

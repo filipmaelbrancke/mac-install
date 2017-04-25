@@ -26,3 +26,6 @@ brew cask install quicklookapk # Preview Android APK files
 #brew cask install qlcolorcode # Renders source code with syntax highlighting
 #brew cask install qlmarkdown # Renders a preview of a Markdown file
 #brew cask install quicklook-json # Renders a preview of a Json file
+
+echo "Configuring Spectacle"
+cp files/Shortcuts.json ~/"Library/Application Support/Spectacle/Shortcuts.json"

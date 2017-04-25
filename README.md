@@ -6,7 +6,8 @@ Based on :
 
 - Pivotal's setup scripts (https://github.com/pivotal/workstation-setup)  
 - https://github.com/pakoito/dotfiles
-
+- https://github.com/mathiasbynens/dotfiles
+- https://github.com/holman/dotfiles
 
 
 ## Getting Started
