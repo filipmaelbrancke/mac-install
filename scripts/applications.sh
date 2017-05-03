@@ -50,6 +50,7 @@ brew cask install sublime-text
 brew cask install atom
 brew install macvim
 brew cask install xmind
+brew cask install visual-studio-code
 
 # Graphics tools
 

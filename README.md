@@ -8,6 +8,9 @@ Based on :
 - https://github.com/pakoito/dotfiles
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/holman/dotfiles
+- Bash-it (https://github.com/Bash-it/bash-it)
+- https://github.com/albinekcom/updater-for-macos
+- https://medium.com/@waxzce/keeping-macos-clean-this-is-my-osx-brew-update-cli-command-6c8f12dc1731
 
 
 ## Getting Started
