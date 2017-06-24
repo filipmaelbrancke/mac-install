@@ -6,8 +6,6 @@ echo "Installing applications"
 brew cask install flux
 brew cask install flycut
 brew cask install spectacle
-#brew cask install dash
-brew cask install postman
 brew cask install google-drive
 brew cask install dropbox
 brew cask install cheatsheet
@@ -15,7 +13,6 @@ brew cask install macpass
 brew cask install keepassx
 brew cask install keeweb
 brew cask install bettertouchtool
-brew cask install marked
 brew cask install go2shell
 brew cask install vlc
 brew cask install the-unarchiver
@@ -49,12 +46,16 @@ brew cask install telegram
 
 # (Text) Editors
 
-brew cask install macdown
 brew cask install sublime-text
 brew cask install atom
 brew install macvim
 brew cask install xmind
 brew cask install visual-studio-code
+
+# Markdown
+brew cask install marked
+brew cask install macdown
+brew cask install abricotine
 
 # Graphics tools
 
@@ -64,11 +65,6 @@ brew cask install zeplin
 # Screen recorder
 
 brew cask install kap
-
-# DB
-brew cask install sequel-pro
-brew cask install robomongo
-brew cask install sqlitebrowser
 
 # Other
 
@@ -80,10 +76,6 @@ brew cask install knockknock
 # Emulation tools
 
 #brew cask install virtualbox
-
-# Servers
-
-brew install rabbitmq
 
 # Useful scripts
 

@@ -8,6 +8,8 @@ function installMacAppStoreApps {
   mas 'Spark', id: 1176895641
   mas 'Parallels Desktop Lite', id: 1085114709
   mas 'Jayson - Visual JSON Editor', id: 1189824719
+  # ...
+  # byword
 }
 
 
