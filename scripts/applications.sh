@@ -41,7 +41,8 @@ brew cask install google-chrome-canary
 brew cask install slack
 brew cask install franz
 #brew cask install nylas-n1
-brew cask install telegram
+
+#brew cask install telegram
 brew cask install skype
 
 # (Text) Editors

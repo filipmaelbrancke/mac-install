@@ -10,7 +10,7 @@ brew cask install ngrok
 
 # DB
 brew cask install sequel-pro
-brew cask install robomongo
+brew cask install robo-3t
 brew cask install sqlitebrowser
 
 #brew cask install dash
