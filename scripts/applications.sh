@@ -20,7 +20,6 @@ brew cask install tunnelblick
 brew cask install cyberduck
 brew cask install mirrordisplays
 brew cask install etcher
-brew cask install graphiql
 brew install wget
 
 # Terminals
@@ -43,6 +42,7 @@ brew cask install slack
 brew cask install franz
 #brew cask install nylas-n1
 brew cask install telegram
+brew cask install skype
 
 # (Text) Editors
 
@@ -61,6 +61,7 @@ brew cask install abricotine
 
 brew cask install skitch
 brew cask install zeplin
+brew cask install pencil
 
 # Screen recorder
 
