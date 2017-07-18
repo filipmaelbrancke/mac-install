@@ -6,7 +6,8 @@ echo "Installing applications"
 brew cask install flux
 brew cask install flycut
 brew cask install spectacle
-brew cask install google-drive
+#brew cask install google-drive
+brew cask install google-backup-and-sync
 brew cask install dropbox
 brew cask install cheatsheet
 brew cask install macpass
@@ -21,6 +22,9 @@ brew cask install cyberduck
 brew cask install mirrordisplays
 brew cask install etcher
 brew install wget
+brew cask install disk-inventory-x
+# control Mac Media Keys
+brew cask install beardedspice
 
 # Terminals
 
@@ -42,7 +46,7 @@ brew cask install slack
 brew cask install franz
 #brew cask install nylas-n1
 
-#brew cask install telegram
+brew cask install telegram
 brew cask install skype
 
 # (Text) Editors
@@ -64,6 +68,10 @@ brew cask install skitch
 brew cask install zeplin
 brew cask install pencil
 
+# Video
+
+brew cask install handbrake
+
 # Screen recorder
 
 brew cask install kap
@@ -73,7 +81,11 @@ brew cask install kap
 brew cask install evernote
 brew cask install kindle
 brew cask install google-play-music-desktop-player
+
+# Security
+
 brew cask install knockknock
+brew cask install blockblock
 
 # Emulation tools
 
@@ -88,4 +100,6 @@ brew cask install veracrypt
 # VeraCrypt config: by default VeraCrypt will not alter the timestamp of the volume after it has been created
 # This will prevent Cloud syncing from recognizing changes to the volume, and prevent synchronization
 # So: 'uncheck' "Preserve modification timestamp of file containers"
-cp files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"
+# ### cp files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"
+# ditto (OSX-specific app) will create the directory structure that is missing in the destination
+ditto files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"
