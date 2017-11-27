@@ -4,3 +4,4 @@ brew install scala
 brew install sbt
 brew install typesafe-activator
 brew install apache-spark
+brew install ammonite-repl

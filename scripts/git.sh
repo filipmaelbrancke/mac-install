@@ -4,6 +4,7 @@ brew install git
 brew cask install gitkraken
 brew cask install sourcetree
 brew cask install kaleidoscope
+brew cask install gitup
 
 echo
 echo "Setting global Git configurations"

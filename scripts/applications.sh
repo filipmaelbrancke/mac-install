@@ -11,8 +11,10 @@ brew cask install google-backup-and-sync
 brew cask install dropbox
 brew cask install cheatsheet
 brew cask install macpass
-brew cask install keepassx
+#brew cask install keepassx
+brew cask install keepassxc
 brew cask install keeweb
+brew cask install enpass
 brew cask install bettertouchtool
 brew cask install go2shell
 brew cask install vlc
@@ -23,8 +25,10 @@ brew cask install mirrordisplays
 brew cask install etcher
 brew install wget
 brew cask install disk-inventory-x
+brew cask install arq
 # control Mac Media Keys
 brew cask install beardedspice
+brew cask install keybase
 
 # Terminals
 
@@ -43,7 +47,8 @@ brew cask install google-chrome-canary
 # Communication
 
 brew cask install slack
-brew cask install franz
+brew cask install rambox
+#brew cask install franz
 #brew cask install nylas-n1
 
 brew cask install telegram
@@ -71,6 +76,7 @@ brew cask install pencil
 # Video
 
 brew cask install handbrake
+brew install ffmpeg --with-libvpx  # support WebM: ffmpeg -i video.mp4 -strict -2 video.webm
 
 # Screen recorder
 
@@ -103,3 +109,10 @@ brew cask install veracrypt
 # ### cp files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"
 # ditto (OSX-specific app) will create the directory structure that is missing in the destination
 ditto files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt/Configuration.xml"
+
+
+# Add the brew-cask-upgrade tool: allows to upgrade applications installed with homebrew cask
+# homebrew only has support for 'brew cask outdated', not yet 'brew cask upgrade'
+# See: https://github.com/buo/homebrew-cask-upgrade
+# apps can be updated with 'brew cu app'
+brew tap buo/cask-upgrade

@@ -33,6 +33,16 @@ Keeping the machine up to date:
 ./update-machine.sh
 ```
 
+This will :  
+
+- update macOS software
+- update & upgrade homebrew packages
+- update & propose to upgrade homebrew cask packages
+- update npm / apm
+- suggest updates to apps installed through appstore
+
+### Info
+
 The list of installed applications is found in:  
 
 -  [applications.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/applications.sh)
@@ -44,6 +54,7 @@ The list of installed applications is found in:
 -  [java.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/java.sh)
 -  [scala.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/scala.sh)
 
+### Credits
 
 Based on :  
 
@@ -54,3 +65,4 @@ Based on :
 - Bash-it (https://github.com/Bash-it/bash-it)
 - https://github.com/albinekcom/updater-for-macos
 - https://medium.com/@waxzce/keeping-macos-clean-this-is-my-osx-brew-update-cli-command-6c8f12dc1731
+- https://github.com/herrbischoff/awesome-osx-command-line
