@@ -15,6 +15,7 @@ brew cask install macpass
 brew cask install keepassxc
 brew cask install keeweb
 brew cask install enpass
+brew cask install bitwarden
 brew cask install bettertouchtool
 brew cask install go2shell
 brew cask install vlc
@@ -29,6 +30,13 @@ brew cask install arq
 # control Mac Media Keys
 brew cask install beardedspice
 brew cask install keybase
+brew cask install vnc-viewer
+brew cask install grandperspective
+brew cask install calibre
+brew cask install iina
+brew cask install anki
+brew cask install microsoft-remote-desktop-beta
+brew cask install libreoffice
 
 # Terminals
 
@@ -86,7 +94,7 @@ brew cask install kap
 
 brew cask install evernote
 brew cask install kindle
-brew cask install google-play-music-desktop-player
+brew cask install marshallofsound-google-play-music-player
 
 # Security
 

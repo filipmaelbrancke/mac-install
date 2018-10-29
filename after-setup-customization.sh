@@ -6,11 +6,12 @@ bash-it enable alias git
 bash-it enable completion gradle
 bash-it enable alias homebrew
 bash-it enable alias homebrew-cask
+bash-it enable completion kubectl
 
 #!/bin/bash
 # Bonjour name ending in .local
-scutil --set LocalHostName "Filip-MacBook"
+scutil --set LocalHostName "0x66696c6970"
 # Friendly name shown in System Preferences > Sharing
-scutil --set ComputerName "Filip-MacBook"
+scutil --set ComputerName "0x66696c6970"
 # The name recognized by the hostname command
-scutil --set HostName "Filip-MacBook"
+scutil --set HostName "0x66696c6970"

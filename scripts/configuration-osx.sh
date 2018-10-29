@@ -205,6 +205,18 @@ defaults write com.apple.TextEdit RichText -int 0
 defaults write com.apple.TextEdit PlainTextEncoding -int 4
 defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
+# Enabling full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# SCREEN
+# Enabling subpixel font rendering on non-Apple LCDs (Sierra / High Sierra)
+  # defaults write NSGlobalDomain AppleFontSmoothing -int 2
+# Re-enable Subpixel antialiasing for text (Mojave)
+defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
+
+# Enable HiDPI display modes (requires restart)
+# sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
 killall Finder
 killall Dock
 killall SystemUIServer

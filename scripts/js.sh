@@ -5,3 +5,4 @@ echo "Installing Javascript tools"
 #(https://gist.github.com/DanHerbert/9520689)
 # I just give in, and use nvm: https://github.com/creationix/nvm + http://yoember.com/nodejs/the-best-way-to-install-node-js/
 # https://docs.npmjs.com/getting-started/fixing-npm-permissions
+brew install yarn

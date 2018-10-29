@@ -4,6 +4,9 @@ echo "Installing general development tools"
 # command line HTTP client
 brew install httpie
 
+# command line http benchmarking
+brew install siege
+
 # REST API testing tool
 brew cask install postman
 brew cask install insomnia
@@ -21,6 +24,10 @@ brew cask install postico # postgresql
 #brew cask install dash
 
 brew cask install graphiql
+
+# Virtual
+
+brew cask install virtualbox
 
 # Servers
 
