@@ -6,3 +6,7 @@ brew cask install google-cloud-sdk
 brew install heroku
 # Firebase Command Line Interface
 #npm -g install firebase-tools
+brew install awscli
+
+brew tap confluentinc/ccloud
+brew install ccloud

@@ -31,4 +31,4 @@ brew cask install virtualbox
 
 # Servers
 
-brew install rabbitmq
+# Docker containers instead of locally installed servers
