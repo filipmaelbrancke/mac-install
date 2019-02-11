@@ -14,7 +14,6 @@ echo "- Updating \"brew\" -"
 brew update
 brew upgrade
 brew cleanup
-brew cask cleanup
 
 echo “you can hit mas upgrade to upgrade theses apps from the app store:”
 mas outdated

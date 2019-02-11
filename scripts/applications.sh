@@ -23,7 +23,7 @@ brew cask install the-unarchiver
 brew cask install tunnelblick
 brew cask install cyberduck
 brew cask install mirrordisplays
-brew cask install etcher
+brew cask install balenaetcher
 brew install wget
 brew cask install disk-inventory-x
 brew cask install arq
@@ -48,8 +48,8 @@ brew cask install iterm2
 
 brew cask install google-chrome
 brew cask install firefox
-brew cask install torbrowser
-brew cask install brave
+brew cask install tor-browser
+brew cask install brave-browser
 
 brew tap caskroom/versions
 brew cask install google-chrome-canary
@@ -86,7 +86,12 @@ brew cask install pencil
 # Video
 
 brew cask install handbrake
-brew install ffmpeg --with-libvpx  # support WebM: ffmpeg -i video.mp4 -strict -2 video.webm
+# Homebrew removed formula options as of Homebrew version 2.0
+# so no more using the core ffmpeg formula
+brew tap justinmayer/tap
+brew tap-pin justinmayer/tap
+brew install ffmpeg --with-chromaprint --with-fdk-aac
+# includes support WebM: ffmpeg -i video.mp4 -strict -2 video.webm
 
 # Screen recorder
 

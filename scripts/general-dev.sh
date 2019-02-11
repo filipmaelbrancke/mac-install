@@ -18,7 +18,7 @@ brew cask install ngrok
 ## GUIs
 brew cask install sequel-pro # mysql
 brew cask install robo-3t # mongo
-brew cask install sqlitebrowser # sqlite
+brew cask install db-browser-for-sqlite # sqlite
 brew cask install postico # postgresql
 
 #brew cask install dash

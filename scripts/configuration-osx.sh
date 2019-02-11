@@ -87,9 +87,9 @@ defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
 defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+#   defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
 # Follow the keyboard focus while zoomed in
-defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
+#   defaults write com.apple.universalaccess closeViewZoomFollowsFocus -bool true
 
 # Disable “natural” scrolling
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
@@ -251,6 +251,9 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 # Enable HiDPI display modes (requires restart)
 # sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
+
+# Enable Dark mode
+osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 killall Finder
 killall Dock

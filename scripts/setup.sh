@@ -26,7 +26,7 @@ read phonenumber
 echo
 echo "Setting up machine..."
 
-source ${MY_DIR}/xcode-license.sh
+# source ${MY_DIR}/xcode-license.sh
 
 # Note: Homebrew needs to be set up first
 source ${MY_DIR}/homebrew.sh

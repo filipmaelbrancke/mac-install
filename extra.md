@@ -4,9 +4,12 @@
 ## Disable Diagnostics
 To avoid sending data to Apple or App Developers disable the following:
 
-* System Preferences → Security & Privacy → Privacy → Diagnostics & Usage
-* Uncheck “Send diagnostic & usage data to Apple”
-* Uncheck “Share crash data with app developers”.
+* System Preferences → Security & Privacy → Privacy → Analytics
+* Uncheck “Share Mac Analytics”
+* Uncheck “Share with App Developers”.
+* Uncheck “Share iCloud Analytics”
+* Under Advertising
+* Check "Limit Ad Tracking"
 
 ---
 
@@ -16,5 +19,17 @@ Apples Handoff is a feature to keep your workspaces in sync but it does require 
 * System Preferences → General
 * Uncheck “Allow Handoff between this Mac and your iCloud devices”
 * Set “Recent Items” to none. You will find this inside of the dropdown box right above the Handoff option.
+
+---
+
+## Use Caps Lock as Escape in macOS
+On Touch Bar enabled Macs, the Escape key has been removed and replaced by a Touch Bar software button. This sucks for development.
+
+To map Escape to Caps Lock, do the following:
+
+* From the Apple menu, open System Preferences…
+* Open Keyboard
+* Open Modifier Keys…
+* Select Caps Lock as the Escape key
 
 ---

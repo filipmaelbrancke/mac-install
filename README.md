@@ -4,8 +4,9 @@ My OS X on MacBook Pro install.
 
 ## Getting Started
 
-- Make sure you are running [Sierra](http://www.apple.com/macos/sierra/)
-- Install [Xcode 8.1](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+- Currently tested against [Mojave](https://www.apple.com/macos/mojave/)
+    - These scripts might work on previous versions, down to [Sierra](http://www.apple.com/macos/sierra/), but are maintained with only the latest macOS in mind
+- Install [Xcode 10](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 
 
 Open up the OS X Terminal and run the following commands:
@@ -43,22 +44,15 @@ This will :
 
 ### Info
 
-The list of installed applications is found in:  
+Originally based on Pivotal's setup scripts (https://github.com/pivotal/workstation-setup)  
 
--  [applications.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/applications.sh)
--  [android.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/android.sh)
--  [appstore.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/appstore.sh)
--  [docker.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/docker.sh)
--  [general-dev.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/general-dev.sh)
--  [git.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/git.sh)
--  [java.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/java.sh)
--  [scala.sh] (https://github.com/filipmaelbrancke/mac-install/blob/master/scripts/scala.sh)
+Some `defaults` are commented out for the moment, due to Mojave's permissions. Adding Terminal/iTerm and bash to Full Disk Access allows to set `defaults` again, but it might be better to look up how to address the container directly...    
+See also: https://github.com/mathiasbynens/dotfiles/issues/849
 
 ### Credits
 
 Based on :  
 
-- Pivotal's setup scripts (https://github.com/pivotal/workstation-setup)  
 - https://github.com/pakoito/dotfiles
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/holman/dotfiles
