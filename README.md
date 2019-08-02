@@ -14,7 +14,7 @@ Open up the OS X Terminal and run the following commands:
 ```sh
 mkdir -p ~/workspace
 cd ~/workspace
-git clone https://github.com/filipmaelbrancke/mac-install.git
+git clone https://github.com/Strat1987/mac-install.git
 cd mac-install
 ```
 
