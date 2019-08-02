@@ -14,7 +14,7 @@ Open up the OS X Terminal and run the following commands:
 ```sh
 mkdir -p ~/workspace
 cd ~/workspace
-git clone https://github.com/filipmaelbrancke/mac-install.git
+git clone https://github.com/Strat1987/mac-install.git
 cd mac-install
 ```
 
@@ -60,3 +60,9 @@ Based on :
 - https://github.com/albinekcom/updater-for-macos
 - https://medium.com/@waxzce/keeping-macos-clean-this-is-my-osx-brew-update-cli-command-6c8f12dc1731
 - https://github.com/herrbischoff/awesome-osx-command-line
+
+Oh My ZSH + iTerm2
+- https://github.com/robbyrussell/oh-my-zsh
+- https://medium.com/swlh/power-up-your-terminal-using-oh-my-zsh-iterm2-c5a03f73a9fb
+- https://dev.to/equiman/iterm2--oh-my-zsh--powerlevel9k-best-terminal-combination-for-geeks-58l5
+- https://gist.github.com/kevin-smets/8568070
