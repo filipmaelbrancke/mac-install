@@ -142,8 +142,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-killall Dock
+# defaults write com.apple.dock autohide -bool true
+# killall Dock
 
 # Hot corners
 # Possible values:
@@ -158,13 +158,21 @@ killall Dock
 # 11: Launchpad
 # 12: Notification Center
 
-# Run the screensaver if we're in the top-right hot corner.
-#defaults write com.apple.dock wvous-tr-corner -int 5
-#defaults write com.apple.dock wvous-tr-modifier -int 0
+# Show the notification centre if we're in the top-right hot corner.
+defaults write com.apple.dock wvous-tr-corner -int 12
+defaults write com.apple.dock wvous-tr-modifier -int 0
 
-# Top left screen corner → Desktop
-#defaults write com.apple.dock wvous-tl-corner -int 2
-#defaults write com.apple.dock wvous-tl-modifier -int 0
+# Show the Desktop if we're in the bottom-right hot corner.
+defaults write com.apple.dock wvous-br-corner -int 4
+defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Show the Dashboard if we're in the top-right hot corner.
+defaults write com.apple.dock wvous-tl-corner -int 7
+defaults write com.apple.dock wvous-tl-modifier -int 0
+
+# Show the Mission Control if we're in the bottom-left hot corner.
+defaults write com.apple.dock wvous-bl-corner -int 2
+defaults write com.apple.dock wvous-bl-modifier -int 0
 
 ###############################################################################
 # Safari & WebKit                                                             #
