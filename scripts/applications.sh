@@ -103,7 +103,18 @@ brew cask install sublime-text
 brew cask install atom
 brew install macvim
 brew cask install xmind
+
+# (Code) Editor(s) - IDE > Integrated development environment
+
 brew cask install visual-studio-code
+
+# Set VS Code as default git diff tool over opendiff
+if grep -Fxq "vscode" ~/.gitconfig > /dev/null
+then
+    echo "vscode is already configured as default GIT diff tool in your ~/.gitconfig"
+else
+    cat files/gitconfig-vscode-default-difftool >> ~/.gitconfig
+fi
 
 # Markdown
 brew cask install marked
