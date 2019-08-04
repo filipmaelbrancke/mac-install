@@ -106,7 +106,11 @@ brew cask install xmind
 
 # (Code) Editor(s) - IDE > Integrated development environment
 
-brew cask install visual-studio-code
+brew cask install intellij-idea # Best Java editor out there (does require an active licence).
+# brew cask install intellij-idea-ce # As an alternative you can install the free community edition
+brew cask install eclipse-ide # The second most popular Java editor which is free is Eclipse eclipse-ide
+
+brew cask install visual-studio-code # Code editor for front-end
 
 # Set VS Code as default git diff tool over opendiff
 if grep -Fxq "vscode" ~/.gitconfig > /dev/null

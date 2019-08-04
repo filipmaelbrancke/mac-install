@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-
 START_DATE=$(date +"%d.%m.%Y | %H:%M:%S")
 SECONDS=0
 echo "--- Updater for this machine started at: $START_DATE ---"
