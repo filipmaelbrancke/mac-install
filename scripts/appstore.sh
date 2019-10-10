@@ -12,6 +12,8 @@ function installMacAppStoreApps {
   mas install 1085114709
   # 'Jayson - Visual JSON Editor', id: 1189824719
   mas install 1189824719
+  # 'Amphetamine - Powerful keep-awake utility', id: 937984704
+  mas install 937984704
   # ...
   # byword
 }
