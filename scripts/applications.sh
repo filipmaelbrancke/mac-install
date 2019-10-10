@@ -16,6 +16,7 @@ brew cask install keepassxc
 brew cask install keeweb
 brew cask install enpass
 brew cask install bitwarden
+brew install bitwarden-cli
 brew cask install bettertouchtool
 brew cask install go2shell
 brew cask install vlc
@@ -39,6 +40,8 @@ brew cask install microsoft-remote-desktop-beta
 brew cask install libreoffice
 brew cask install aerial
 brew cask install transmission
+brew cask install sloth
+brew cask install 1password
 
 # Terminals
 
@@ -63,6 +66,7 @@ brew cask install rambox
 
 brew cask install telegram
 brew cask install skype
+brew cask install skype-for-business
 
 # (Text) Editors
 
@@ -89,8 +93,7 @@ brew cask install handbrake
 # Homebrew removed formula options as of Homebrew version 2.0
 # so no more using the core ffmpeg formula
 brew tap justinmayer/tap
-brew tap-pin justinmayer/tap
-brew install ffmpeg --with-chromaprint --with-fdk-aac
+brew install justinmayer/tap/ffmpeg --with-chromaprint --with-fdk-aac
 # includes support WebM: ffmpeg -i video.mp4 -strict -2 video.webm
 
 # Screen recorder

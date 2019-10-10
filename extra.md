@@ -33,3 +33,15 @@ To map Escape to Caps Lock, do the following:
 * Select Caps Lock as the Escape key
 
 ---
+
+## Tune auto-starting applications
+Skype seems to think it is important enough to enjoy auto startup:
+
+* From the Apple menu, open System Preferences…
+* Users & Groups
+* Current User
+* Login items
+* Remove Skype For Business
+* In terminal: `sudo launchctl remove com.skype.skype.shareagent`  (found with `launchctl list | grep skype)
+
+---

@@ -11,3 +11,5 @@ brew install awscli
 
 brew tap confluentinc/ccloud
 brew install ccloud
+
+brew install azure-cli

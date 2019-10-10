@@ -32,3 +32,7 @@ brew cask install virtualbox
 # Servers
 
 # Docker containers instead of locally installed servers
+
+brew install vault
+
+brew install jq

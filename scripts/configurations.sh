@@ -29,3 +29,6 @@ brew cask install quicklookapk # Preview Android APK files
 brew cask install qlcolorcode # Renders source code with syntax highlighting
 brew cask install qlmarkdown # Renders a preview of a Markdown file
 brew cask install quicklook-json # Renders a preview of a Json file
+brew cask install qlimagesize # Display image size and resolution
+brew cask install suspicious-package # Preview the contents of a standard Apple installer package
+brew cask install quicklookase # Preview Adobe ASE Color Swatches

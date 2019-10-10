@@ -11,3 +11,8 @@ echo
 echo "Installing Java 8"
 brew tap caskroom/versions
 brew cask install java8
+
+echo
+echo "Installing Java 11"
+brew tap AdoptOpenJDK/openjdk
+brew cask install adoptopenjdk11
