@@ -14,8 +14,10 @@ function installMacAppStoreApps {
   mas install 1189824719
   # 'Amphetamine - Powerful keep-awake utility', id: 937984704
   mas install 937984704
-  # ...
-  # byword
+  # 'WireGuard VPN client', id: 1451685025
+  mas install 1451685025
+  # 'Byword - Markdown editor', id: 420212497
+  mas install 420212497
 }
 
 
