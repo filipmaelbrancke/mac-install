@@ -5,7 +5,9 @@ echo "Installing applications"
 
 brew cask install flux
 brew cask install flycut
-brew cask install spectacle
+# Move and resize windows on macOS with keyboard shortcuts and snap areas
+# Spectacle is no longer maintained -> Rectangle
+brew cask install rectangle
 #brew cask install google-drive
 brew cask install google-backup-and-sync
 brew cask install dropbox

@@ -229,6 +229,10 @@ defaults write org.m0k.transmission RandomPort -bool true
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
+# Prevent Window resizing being slightly off for iTerm2
+# (By default iTerm2 will only resize in increments of character widths)
+defaults write com.googlecode.iterm2 DisableWindowSizeSnap -integer 1
+
 # stop Photos from opening automatically
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 #to revert use defaults -currentHost delete com.apple.ImageCapture disableHotPlug
@@ -254,6 +258,9 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 
 # Enable Dark mode
 osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
+
+# instead of only appearing on the last monitor you touched the dock, make cmd-tab app switcher show up on all monitors
+defaults write com.apple.Dock appswitcher-all-displays -bool true
 
 killall Finder
 killall Dock
