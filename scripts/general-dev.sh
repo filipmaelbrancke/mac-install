@@ -7,9 +7,11 @@ brew install httpie
 # command line http benchmarking
 brew install siege
 
-# REST API testing tool
+# API testing tool
 brew cask install postman
 brew cask install insomnia
+brew cask install insomnia-designer
+brew cask install firecamp
 
 # Secure tunnels to localhost
 brew cask install ngrok
@@ -24,6 +26,7 @@ brew cask install postico # postgresql
 #brew cask install dash
 
 brew cask install graphiql
+brew cask install mqtt-explorer
 
 # Virtual
 
@@ -36,3 +39,5 @@ brew cask install virtualbox
 brew install vault
 
 brew install jq
+brew install coreutils
+brew install graphviz

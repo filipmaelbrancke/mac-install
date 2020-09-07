@@ -15,6 +15,9 @@ alias kcurrent='k config current-context'
 alias kdev='kubectl config use-context dev'
 alias kprod='kubectl config use-context prod'
 
+# Docker - bash-it: see $bash-it help aliases docker
+alias dkstac='docker stop $(docker ps -a -q)'
+
 # Useful commands
 
 # // Generate random time-based UUID, and copy to the OS X clipboard

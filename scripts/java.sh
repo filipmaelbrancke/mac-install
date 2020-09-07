@@ -9,10 +9,16 @@ brew install jenv
 
 echo
 echo "Installing Java 8"
-brew tap caskroom/versions
-brew cask install java8
+brew tap homebrew/cask-versions
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
 echo
 echo "Installing Java 11"
 brew tap AdoptOpenJDK/openjdk
 brew cask install adoptopenjdk11
+
+echo "Installing Java 14"
+brew cask install adoptopenjdk14
+
+echo "Installing Azul OpenJDK"
+brew cask install zulu11

@@ -41,7 +41,8 @@ brew cask install libreoffice
 brew cask install aerial
 brew cask install transmission
 brew cask install sloth
-brew cask install 1password
+#brew cask install 1password
+brew cask install hiddenbar
 
 # Terminals
 
@@ -75,6 +76,7 @@ brew cask install atom
 brew install macvim
 brew cask install xmind
 brew cask install visual-studio-code
+brew cask install brackets
 
 # Markdown
 brew cask install marked
@@ -106,10 +108,16 @@ brew cask install evernote
 brew cask install kindle
 brew cask install marshallofsound-google-play-music-player
 
+# Sync brightness (based on build-in Macbook light sensor) to external monitors
+brew cask install lunar
+
+
 # Security
 
 brew cask install knockknock
 brew cask install blockblock
+brew cask install taskexplorer
+brew cask install netiquette
 
 # Emulation tools
 
@@ -118,6 +126,8 @@ brew cask install blockblock
 # Useful scripts
 
 brew install youtube-dl
+# https://github.com/lapfelix/BluetoothConnector/ : connect/disconnect Bluetooth devices
+brew install bluetoothconnector
 
 
 brew cask install veracrypt
@@ -134,3 +144,7 @@ ditto files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt
 # See: https://github.com/buo/homebrew-cask-upgrade
 # apps can be updated with 'brew cu app'
 brew tap buo/cask-upgrade
+
+
+brew tap homebrew/cask-drivers
+brew cask install bose-soundtouch

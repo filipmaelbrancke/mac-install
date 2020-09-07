@@ -4,7 +4,7 @@ echo "Installing fonts"
 # Fonts
 
 # Installing fonts tap
-brew tap caskroom/fonts
+brew tap homebrew/cask-fonts
 
 brew cask install font-inconsolata
 brew cask install font-roboto
