@@ -19,7 +19,6 @@ read fullname
 echo
 echo "Enter your email address and press [ENTER]"
 read emailaddress
-echo
 echo "Enter your phone number and press [ENTER]"
 read phonenumber
 
@@ -32,7 +31,7 @@ echo "Setting up machine..."
 # Note: Homebrew needs to be set up first
 source ${MY_DIR}/homebrew.sh
 source ${MY_DIR}/configuration-osx.sh "$fullname" $emailaddress "$phonenumber"
-source ${MY_DIR}/zsh.sh
+source ${MY_DIR}/configuration-bash.sh
 source ${MY_DIR}/git.sh "$fullname" $emailaddress
 source ${MY_DIR}/java.sh
 source ${MY_DIR}/android.sh
@@ -40,10 +39,8 @@ source ${MY_DIR}/cli.sh
 source ${MY_DIR}/applications.sh
 source ${MY_DIR}/fonts.sh
 source ${MY_DIR}/docker.sh
-source ${MY_DIR}/k8s.sh
-source ${MY_DIR}/dev-tools.sh
+source ${MY_DIR}/general-dev.sh
 source ${MY_DIR}/appstore.sh
 source ${MY_DIR}/configurations.sh
-source ${MY_DIR}/kafka.sh
 
 source ${MY_DIR}/finished.sh
