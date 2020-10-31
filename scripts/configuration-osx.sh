@@ -62,7 +62,7 @@ defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 
 # Use AirDrop over every interface. srsly this should be a default.
-defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+# defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 
 ###############################################################################
 # System settings                                                             #
@@ -74,56 +74,17 @@ if [ ! -d "$HOME/Downloads/Screenshots" ]; then
 fi
 defaults write com.apple.screencapture location $HOME/Downloads/Screenshots; killall SystemUIServer
 
-echo "Configuring the lock screen message for user $USER with email address $EMAIL_ADDRESS and phone number $PHONE_NUMBER"
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
-
-# Trackpad:
-# enable tap to click for this user and for the login screen
+# Trackpad: enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-# Check settings: defaults read com.apple.AppleMultitouchTrackpad
+echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
 
-# Silent clicking
-defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
-
-# Haptic feedback
-# 0: Light
-# 1: Medium
-# 2: Firm
-defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 1
-defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 1
-
-# Tracking Speed
-# 0: Slow
-# 3: Fast
-defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1.5
-
-# Keyboard
 # fast key repeat rate, requires reboot to take effect
-###defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
-###defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
-
-# Disable press-and-hold for keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
-# Set key repeat rate (minimum 1)
-# Off: 300000
-# Slow: 120
-# Fast: 2
-defaults write NSGlobalDomain KeyRepeat -int 1
-
-# Set delay until repeat (in milliseconds)
-# Long: 120
-# Short: 15
-defaults write NSGlobalDomain InitialKeyRepeat -int 10
-
-# Use F1, F2, etc. keys as standard function keys
-defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
-
-# Stop iTunes from responding to the keyboard media keys
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
+defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
+defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 #   defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -134,14 +95,14 @@ launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/nul
 defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
-#defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-#defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Max (editable)" 80
-#defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" 40
-#defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool (editable)" 80
-#defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool Min (editable)" 80
-#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool" 80
-#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Max" 80
-#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Min" 80
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Max (editable)" 80
+# defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" 40
+# defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool (editable)" 80
+# defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool Min (editable)" 80
+# defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool" 80
+# defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Max" 80
+# defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Min" 80
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -181,8 +142,8 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 ###############################################################################
 
 # Automatically hide and show the Dock
-defaults write com.apple.dock autohide -bool true
-killall Dock
+# defaults write com.apple.dock autohide -bool true
+# killall Dock
 
 # Hot corners
 # Possible values:
@@ -226,7 +187,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-
 ###############################################################################
 # Other                                                                       #
 ###############################################################################
@@ -236,7 +196,7 @@ defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
 # Prevent Window resizing being slightly off for iTerm2
 # (By default iTerm2 will only resize in increments of character widths)
-defaults write com.googlecode.iterm2 DisableWindowSizeSnap -integer 1
+# defaults write com.googlecode.iterm2 DisableWindowSizeSnap -integer 1
 
 # stop Photos from opening automatically
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
@@ -262,7 +222,7 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool FALSE
 # sudo defaults write /Library/Preferences/com.apple.windowserver DisplayResolutionEnabled -bool true
 
 # Enable Dark mode
-osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
+# osascript -e 'tell application "System Events" to tell appearance preferences to set dark mode to true'
 
 # instead of only appearing on the last monitor you touched the dock, make cmd-tab app switcher show up on all monitors
 defaults write com.apple.Dock appswitcher-all-displays -bool true
