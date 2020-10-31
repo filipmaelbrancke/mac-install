@@ -1,23 +1,24 @@
+# echo
+# echo "Installing Java Development tools"
+# brew cask install java
+# brew cask install intellij-idea
+# brew install maven
+# brew install gradle
+# brew cask install eclipse-ide # teach java training
+# brew install jenv
+
 echo
-echo "Installing Java Development tools"
+echo "Installing Java 8"
+brew tap homebrew/cask-versions
+brew cask install adoptopenjdk/openjdk/adoptopenjdk8
 
-echo "Installing Java 11"
-brew tap AdoptOpenJDK/openjdk
-brew install --cask adoptopenjdk11
+# echo
+# echo "Installing Java 11"
+# brew tap AdoptOpenJDK/openjdk
+# brew cask install adoptopenjdk11
 
-brew install --cask jetbrains-toolbox
+# echo "Installing Java 14"
+# brew cask install adoptopenjdk14
 
-echo
-echo "Installing SDKMAN"
-curl -s "https://get.sdkman.io" | bash
-
-# install local  java11 into sdkman: 
-# sdk install java 11-adoptopenjdk /Library/Java/JavaVirtualMachines/adoptopenjdk-11.jdk/Contents/Home
-# sdk default java 11-adoptopenjdk
-
-# maven, cradle -> sdkman
-# sdk install gradle
-# sdk install maven
-
-# VisualVM
-# $ sdk install visualvm
+# echo "Installing Azul OpenJDK"
+# brew cask install zulu11
