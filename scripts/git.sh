@@ -1,12 +1,12 @@
 echo
 echo "Installing Git and associated tools"
 brew install git
-brew cask install gitkraken
-brew cask install sourcetree
+# brew cask install gitkraken
+# brew cask install sourcetree
 brew cask install kaleidoscope
-brew cask install gitup
-brew cask install github
-brew cask install fork
+# brew cask install gitup
+# brew cask install github
+# brew cask install fork
 
 echo
 echo "Setting global Git configurations"
@@ -22,7 +22,7 @@ else
     EMAIL_ADDRESS=$emailaddress
 fi
 
-git config --global core.editor /usr/bin/vim
+git config --global core.editor code
 git config --global transfer.fsckobjects true
 git config --global credential.helper osxkeychain
 
