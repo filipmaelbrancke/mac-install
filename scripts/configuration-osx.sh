@@ -186,6 +186,9 @@ defaults write com.apple.dock tilesize -int 29
 # Dock magnification
 defaults write com.apple.dock magnification -bool true
 
+# Minimization effect: 'genie', 'scale', 'suck'
+defaults write com.apple.dock mineffect -string 'genie'
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
