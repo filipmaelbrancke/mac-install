@@ -189,6 +189,9 @@ defaults write com.apple.dock magnification -bool true
 # Minimization effect: 'genie', 'scale', 'suck'
 defaults write com.apple.dock mineffect -string 'genie'
 
+# Remove all the stupid default Apple app icons from the Dock
+defaults write com.apple.dock persistent-apps -array
+
 ###############################################################################
 # Safari & WebKit                                                             #
 ###############################################################################
