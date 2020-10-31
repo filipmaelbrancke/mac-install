@@ -3,6 +3,7 @@ echo "Installing applications"
 
 # Utilities
 
+brew cask install alfred
 # brew cask install flux
 # brew cask install flycut
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
