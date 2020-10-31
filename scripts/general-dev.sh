@@ -8,6 +8,7 @@ echo "Installing general development tools"
 # brew install siege
 
 # API testing tool
+brew cask install charles
 # brew cask install postman
 # brew cask install insomnia
 # brew cask install insomnia-designer
