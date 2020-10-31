@@ -1,11 +1,17 @@
 echo
 echo "Installing CLIs"
 # Google Cloud SDK
-brew install --cask google-cloud-sdk
+brew cask install google-cloud-sdk
+
 # Heroku CLI
-brew tap heroku/brew
-brew install heroku
-# AWS CLI
+# brew tap heroku/brew
+# brew install heroku
+
+# Firebase Command Line Interface
+#npm -g install firebase-tools
 brew install awscli
-# Azure CLI
-brew install azure-cli
+
+# brew tap confluentinc/ccloud
+# brew install ccloud
+
+# brew install azure-cli
