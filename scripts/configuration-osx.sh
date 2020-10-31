@@ -74,17 +74,50 @@ if [ ! -d "$HOME/Downloads/Screenshots" ]; then
 fi
 defaults write com.apple.screencapture location $HOME/Downloads/Screenshots; killall SystemUIServer
 
-# Trackpad: enable tap to click for this user and for the login screen
+# Mouse Trackpad
+# enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
+# Silent clicking
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
+# Haptic feedback
+# 0: Light
+# 1: Medium
+# 2: Firm
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 0
+
+# Tracking Speed
+# 0: Slow
+# 3: Fast
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1.5
+
 echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
 
+# Keyboard
 # fast key repeat rate, requires reboot to take effect
-defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
-defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set key repeat rate (minimum 1)
+# Off: 300000
+# Slow: 120
+# Fast: 2
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+# Set delay until repeat (in milliseconds)
+# Long: 120
+# Short: 15
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Use F1, F2, etc. keys as standard function keys
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
+
+# Stop iTunes from responding to the keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 #   defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
