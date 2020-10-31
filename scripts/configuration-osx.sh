@@ -133,6 +133,17 @@ defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 
+# Show default icons in menu bar
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/Volume.menu"
+
+# Show digital clock
+defaults write com.apple.menuextra.clock IsAnalog -bool false
+## Don't flash separators
+defaults write com.apple.menuextra.clock FlashDateSeparators -bool false
+## Show date
+## Examples can be found here: https://github.com/tech-otaku/macos-defaults/blob/master/date-time.sh
+defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm:ss"
+
 
 # Disable Notification Center and remove the menu bar icon
 #launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist 2> /dev/null
@@ -165,6 +176,15 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # Top left screen corner → Desktop
 #defaults write com.apple.dock wvous-tl-corner -int 2
 #defaults write com.apple.dock wvous-tl-modifier -int 0
+
+# Don't show recently used apps it's annoying
+defaults write com.apple.dock show-recents -bool false
+
+# Icon size of Dock items
+defaults write com.apple.dock tilesize -int 29
+
+# Dock magnification
+defaults write com.apple.dock magnification -bool true
 
 ###############################################################################
 # Safari & WebKit                                                             #
