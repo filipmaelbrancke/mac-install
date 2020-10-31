@@ -11,6 +11,7 @@ echo "Installing applications"
 # brew cask install google-drive
 # brew cask install google-backup-and-sync
 # brew cask install dropbox
+brew cask install resilio-sync
 # brew cask install cheatsheet
 # brew cask install macpass
 # brew cask install keepassx
