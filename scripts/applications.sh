@@ -122,10 +122,6 @@ brew cask install visual-studio-code
 # brew cask install taskexplorer
 # brew cask install netiquette
 
-# Emulation tools
-
-# brew cask install virtualbox
-
 # Useful scripts
 
 brew install youtube-dl
