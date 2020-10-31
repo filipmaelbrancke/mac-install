@@ -4,7 +4,7 @@ My OS X on MacBook Pro install.
 
 ## Getting Started
 
-- Currently tested against [Catalina](https://www.apple.com/macos/catalina/)
+- Currently tested against [Catalina 10.15.7](https://www.apple.com/macos/catalina/)
 - Install [Xcode 10](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 
 Open up the OS X Terminal and run the following commands:
