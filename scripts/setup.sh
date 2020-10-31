@@ -33,7 +33,6 @@ source ${MY_DIR}/homebrew.sh
 source ${MY_DIR}/configuration-osx.sh "$fullname" $emailaddress "$phonenumber"
 source ${MY_DIR}/configuration-bash.sh
 source ${MY_DIR}/git.sh "$fullname" $emailaddress
-source ${MY_DIR}/git-aliases.sh
 source ${MY_DIR}/java.sh
 source ${MY_DIR}/android.sh
 source ${MY_DIR}/cli.sh
