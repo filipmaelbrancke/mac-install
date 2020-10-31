@@ -21,6 +21,8 @@ echo "Enter your email address and press [ENTER]"
 read emailaddress
 echo "Enter your phone number and press [ENTER]"
 read phonenumber
+echo "Enter path to config-scripts/"
+read configscriptpath
 
 echo
 echo "Setting up machine..."
@@ -29,9 +31,9 @@ echo "Setting up machine..."
 
 # Note: Homebrew needs to be set up first
 source ${MY_DIR}/homebrew.sh
-source ${MY_DIR}/zsh.sh
+source ${MY_DIR}/zsh.sh "$configscriptpath"
 source ${MY_DIR}/configuration-osx.sh "$fullname" $emailaddress "$phonenumber"
-source ${MY_DIR}/git.sh "$fullname" $emailaddress
+source ${MY_DIR}/git.sh
 source ${MY_DIR}/java.sh
 source ${MY_DIR}/android.sh
 source ${MY_DIR}/cli.sh
