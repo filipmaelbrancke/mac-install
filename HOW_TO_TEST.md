@@ -13,3 +13,10 @@ There are multiple options available.
 
 - Follow [this execellent guide](https://www.soupbowl.io/2020/04/macos-in-virtualbox/)
 - Make a `VirtualBox` `snapshot` after install to easily revert to a fresh installation.
+
+Change the resolution to 1920x1080:
+
+```
+VBoxManage setextradata "MacOSCatalina" VBoxInternal2/EfiGraphicsResolution 1920x1080
+```
+
