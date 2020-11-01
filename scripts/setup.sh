@@ -16,7 +16,6 @@ echo "Hello, "$USER".  This script will install your mac. It asks for your email
 echo
 echo "Enter your full name and press [ENTER]"
 read fullname
-echo
 echo "Enter your email address and press [ENTER]"
 read emailaddress
 echo "Enter your phone number and press [ENTER]"
