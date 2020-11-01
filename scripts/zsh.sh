@@ -13,4 +13,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 brew install zsh-autosuggestions
 
 # Copy custom .zshrc
-cp "$CONFIG_SCRIPT_PATH/$HOME/.zshrc" "~/.zshrc"
+cp "$CONFIG_SCRIPT_PATH/HOME/.zshrc" "~/.zshrc"
