@@ -20,3 +20,20 @@ Change the resolution to 1920x1080:
 VBoxManage setextradata "MacOSCatalina" VBoxInternal2/EfiGraphicsResolution 1920x1080
 ```
 
+### Share
+
+You can share a folder from your host Mac to your virtual Mac by using the `File Sharing` option.
+
+Go to:
+- `Settings` > `Sharing`
+- `File Sharing`
+- Add the folder you wish to share
+- Enable it.
+
+On the virtual Mac go to:
+- `Finder`
+- Click on `Go to Server`
+- Enter the address as seen on your host `Mac`
+  - eg: `smb://192.168.1.2`
+- Select the drive you wish to mount
+
