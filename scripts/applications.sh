@@ -90,6 +90,7 @@ brew cask install abricotine
 brew cask install skitch
 brew cask install zeplin
 brew cask install pencil
+brew cask install inkscape
 
 # Video
 
@@ -109,6 +110,7 @@ brew cask install kap
 brew cask install evernote
 brew cask install kindle
 brew cask install marshallofsound-google-play-music-player
+brew cask install omnidisksweeper
 
 # Sync brightness (based on build-in Macbook light sensor) to external monitors
 brew cask install lunar
