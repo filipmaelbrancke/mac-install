@@ -4,9 +4,9 @@ My OS X on MacBook Pro install.
 
 ## Getting Started
 
-- Currently tested against [Mojave](https://www.apple.com/macos/mojave/)
-    - These scripts might work on previous versions, down to [Sierra](http://www.apple.com/macos/sierra/), but are maintained with only the latest macOS in mind
-- Install [Xcode 10](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
+- Currently tested against [Big Sur](https://www.apple.com/macos/big-sur/)
+    - These scripts might work more or less on previous versions, down to [Sierra](http://www.apple.com/macos/sierra/), but are maintained with only the latest macOS in mind
+- Install [Xcode 12](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 
 
 Open up the OS X Terminal and run the following commands:
@@ -53,6 +53,7 @@ See also: https://github.com/mathiasbynens/dotfiles/issues/849
 
 Based on :  
 
+- https://github.com/timrijckaert/mac-install
 - https://github.com/pakoito/dotfiles
 - https://github.com/mathiasbynens/dotfiles
 - https://github.com/holman/dotfiles

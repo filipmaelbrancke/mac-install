@@ -23,7 +23,7 @@ Apples Handoff is a feature to keep your workspaces in sync but it does require 
 ---
 
 ## Use Caps Lock as Escape in macOS
-On Touch Bar enabled Macs, the Escape key has been removed and replaced by a Touch Bar software button. This sucks for development.
+The 16" MacBook Pro ditched the 'butterfly' keyboard, and also made the 'esc' key a physical button again. But the previous years of working on 15" MacBook Pro's with a Touch Bar made me get into the habit or mapping the 'esc' button to another, more convenient key.
 
 To map Escape to Caps Lock, do the following:
 
