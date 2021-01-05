@@ -41,7 +41,6 @@ brew cask install anki
 brew cask install microsoft-remote-desktop-beta
 brew cask install libreoffice
 brew cask install aerial
-brew cask install transmission
 brew cask install sloth
 #brew cask install 1password
 brew cask install hiddenbar

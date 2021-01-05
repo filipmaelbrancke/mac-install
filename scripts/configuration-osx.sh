@@ -74,17 +74,56 @@ if [ ! -d "$HOME/Downloads/Screenshots" ]; then
 fi
 defaults write com.apple.screencapture location $HOME/Downloads/Screenshots; killall SystemUIServer
 
-# Trackpad: enable tap to click for this user and for the login screen
+echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
+sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
+
+# Trackpad:
+# enable tap to click for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
-echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
-sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
+# Check settings: defaults read com.apple.AppleMultitouchTrackpad
 
+# Silent clicking
+defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
+# Haptic feedback
+# 0: Light
+# 1: Medium
+# 2: Firm
+defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 1
+defaults write com.apple.AppleMultitouchTrackpad SecondClickThreshold -int 1
+
+# Tracking Speed
+# 0: Slow
+# 3: Fast
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1.5
+
+# Keyboard
 # fast key repeat rate, requires reboot to take effect
-defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
-defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
+###defaults write ~/Library/Preferences/.GlobalPreferences KeyRepeat -int 1
+###defaults write ~/Library/Preferences/.GlobalPreferences InitialKeyRepeat -int 15
+
+# Disable press-and-hold for keys in favor of key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set key repeat rate (minimum 1)
+# Off: 300000
+# Slow: 120
+# Fast: 2
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+# Set delay until repeat (in milliseconds)
+# Long: 120
+# Short: 15
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# Use F1, F2, etc. keys as standard function keys
+defaults write NSGlobalDomain com.apple.keyboard.fnState -bool false
+
+# Stop iTunes from responding to the keyboard media keys
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist 2> /dev/null
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 #   defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
@@ -96,13 +135,13 @@ defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Increase sound quality for Bluetooth headphones/headsets
 #defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" -int 40
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Max (editable)" 80
-defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" 40
-defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool (editable)" 80
-defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool Min (editable)" 80
-defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool" 80
-defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Max" 80
-defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Min" 80
+#defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Max (editable)" 80
+#defaults write com.apple.BluetoothAudioAgent "Apple Bitpool Min (editable)" 40
+#defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool (editable)" 80
+#defaults write com.apple.BluetoothAudioAgent "Apple Initial Bitpool Min (editable)" 80
+#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool" 80
+#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Max" 80
+#defaults write com.apple.BluetoothAudioAgent "Negotiated Bitpool Min" 80
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
@@ -187,40 +226,6 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
 
-###############################################################################
-# Transmission                                                            #
-###############################################################################
-
-# Use `~/Documents/Torrents` to store incomplete downloads
-defaults write org.m0k.transmission UseIncompleteDownloadFolder -bool true
-defaults write org.m0k.transmission IncompleteDownloadFolder -string "${HOME}/Documents/Torrents"
-
-# Use `~/Downloads` to store completed downloads
-defaults write org.m0k.transmission DownloadLocationConstant -bool true
-
-# Don’t prompt for confirmation before downloading
-defaults write org.m0k.transmission DownloadAsk -bool false
-defaults write org.m0k.transmission MagnetOpenAsk -bool false
-
-# Don’t prompt for confirmation before removing non-downloading active transfers
-defaults write org.m0k.transmission CheckRemoveDownloading -bool true
-
-# Trash original torrent files
-defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
-
-# Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
-# Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
-
-# IP block list.
-# Source: https://giuliomac.wordpress.com/2014/02/19/best-blocklist-for-transmission/
-defaults write org.m0k.transmission BlocklistNew -bool true
-defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
-defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
-
-# Randomize port on launch
-defaults write org.m0k.transmission RandomPort -bool true
 
 ###############################################################################
 # Other                                                                       #

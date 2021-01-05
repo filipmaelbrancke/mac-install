@@ -31,7 +31,8 @@ echo "Setting up machine..."
 # Note: Homebrew needs to be set up first
 source ${MY_DIR}/homebrew.sh
 source ${MY_DIR}/configuration-osx.sh "$fullname" $emailaddress "$phonenumber"
-source ${MY_DIR}/configuration-bash.sh
+source ${MY_DIR}/zsh.sh
+#########source ${MY_DIR}/configuration-bash.sh
 source ${MY_DIR}/git.sh "$fullname" $emailaddress
 source ${MY_DIR}/git-aliases.sh
 source ${MY_DIR}/java.sh
