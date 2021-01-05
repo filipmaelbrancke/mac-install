@@ -1,12 +1,10 @@
 echo
 echo "Installing Git and associated tools"
 brew install git
-brew cask install gitkraken
-brew cask install sourcetree
-brew cask install kaleidoscope
-brew cask install gitup
-brew cask install github
-brew cask install fork
+brew install --cask sourcetree
+brew install --cask kaleidoscope
+brew install --cask gitup
+brew install --cask github
 
 echo
 echo "Setting global Git configurations"
