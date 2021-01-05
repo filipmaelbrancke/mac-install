@@ -74,7 +74,7 @@ if [ ! -d "$HOME/Downloads/Screenshots" ]; then
 fi
 defaults write com.apple.screencapture location $HOME/Downloads/Screenshots; killall SystemUIServer
 
-echo "Configuring the login screen for user $USER with $EMAIL_ADDRESS and $PHONE_NUMBER"
+echo "Configuring the lock screen message for user $USER with email address $EMAIL_ADDRESS and phone number $PHONE_NUMBER"
 sudo defaults write /Library/Preferences/com.apple.loginwindow LoginwindowText "Found this computer? Please contact $FULL_NAME at $EMAIL_ADDRESS - $PHONE_NUMBER"
 
 # Trackpad:
