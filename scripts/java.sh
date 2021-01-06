@@ -1,24 +1,17 @@
 echo
 echo "Installing Java Development tools"
-brew cask install java
-brew cask install intellij-idea
-brew install maven
-brew install gradle
-brew cask install eclipse-ide # teach java training
-brew install jenv
 
-echo
-echo "Installing Java 8"
-brew tap homebrew/cask-versions
-brew cask install adoptopenjdk/openjdk/adoptopenjdk8
-
-echo
 echo "Installing Java 11"
 brew tap AdoptOpenJDK/openjdk
-brew cask install adoptopenjdk11
+brew install --cask adoptopenjdk11
 
-echo "Installing Java 14"
-brew cask install adoptopenjdk14
+brew install --cask jetbrains-toolbox
+brew install maven
+brew install gradle
 
-echo "Installing Azul OpenJDK"
-brew cask install zulu11
+echo
+echo "Installing SDKMAN"
+curl -s "https://get.sdkman.io" | bash
+
+# VisualVM
+# $ sdk install visualvm
