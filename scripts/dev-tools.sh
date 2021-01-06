@@ -35,3 +35,4 @@ brew install jq
 
 brew install coreutils
 brew install graphviz
+brew install --cask sloth

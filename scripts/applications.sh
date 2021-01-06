@@ -3,128 +3,101 @@ echo "Installing applications"
 
 # Utilities
 
-brew cask install flux
-brew cask install flycut
+# Clipboard manager
+brew install --cask flycut
 # Move and resize windows on macOS with keyboard shortcuts and snap areas
-# Spectacle is no longer maintained -> Rectangle
-brew cask install rectangle
-#brew cask install google-drive
-brew cask install google-backup-and-sync
-brew cask install dropbox
-brew cask install cheatsheet
-brew cask install macpass
-#brew cask install keepassx
-brew cask install keepassxc
-brew cask install keeweb
-brew cask install enpass
-brew cask install bitwarden
+brew install --cask rectangle
+brew install --cask google-backup-and-sync
+brew install --cask dropbox
+brew install --cask macpass
+brew install --cask keepassxc
+brew install --cask keeweb
+brew install --cask enpass
+brew install --cask bitwarden
 brew install bitwarden-cli
-brew cask install bettertouchtool
-brew cask install go2shell
-brew cask install vlc
-brew cask install the-unarchiver
-brew cask install tunnelblick
-brew cask install cyberduck
-brew cask install mirrordisplays
-brew cask install balenaetcher
+brew install --cask bettertouchtool
+brew install --cask go2shell
+brew install --cask vlc
+brew install --cask iina
+brew install --cask the-unarchiver
+brew install --cask cyberduck
+brew install --cask balenaetcher
 brew install wget
-brew cask install disk-inventory-x
-brew cask install arq
-# control Mac Media Keys
-brew cask install beardedspice
-brew cask install keybase
-brew cask install vnc-viewer
-brew cask install grandperspective
-brew cask install calibre
-brew cask install iina
-brew cask install anki
-brew cask install microsoft-remote-desktop-beta
-brew cask install libreoffice
-brew cask install aerial
-brew cask install sloth
-#brew cask install 1password
-brew cask install hiddenbar
+brew install --cask disk-inventory-x
+brew install --cask grandperspective
+brew install --cask omnidisksweeper
+brew install --cask arq
+brew install --cask keybase
+brew install --cask vnc-viewer
+brew install --cask calibre
+brew install --cask anki
+brew install --cask libreoffice
+brew install --cask aerial
+
 
 # Terminals
 
-brew cask install iterm2
+brew install --cask iterm2
 
 # Browsers
 
-brew cask install google-chrome
-brew cask install firefox
-brew cask install tor-browser
-brew cask install brave-browser
-
-brew tap caskroom/versions
-brew cask install google-chrome-canary
+brew install --cask google-chrome
+brew install --cask firefox
+brew install --cask tor-browser
+brew install --cask brave-browser
 
 # Communication
 
-brew cask install slack
-brew cask install rambox
-#brew cask install franz
-#brew cask install nylas-n1
+brew install --cask slack
+brew install --cask ferdi
 
-brew cask install telegram
-brew cask install skype
-brew cask install skype-for-business
+brew install --cask telegram
+brew install --cask microsoft-teams
 
 # (Text) Editors
 
-brew cask install sublime-text
-brew cask install atom
+brew install --cask sublime-text
+brew install --cask atomatom
 brew install macvim
-brew cask install xmind
-brew cask install visual-studio-code
-brew cask install brackets
+brew install --cask xmind
+brew install --cask vscodium
+brew install --cask brackets
 
 # Markdown
-brew cask install marked
-brew cask install macdown
-brew cask install abricotine
+brew install --cask marked
+brew install --cask macdown
+brew install --cask abricotine
 
 # Graphics tools
 
-brew cask install skitch
-brew cask install zeplin
-brew cask install pencil
-brew cask install inkscape
+brew install --cask inkscape
 
 # Video
 
-brew cask install handbrake
-# Homebrew removed formula options as of Homebrew version 2.0
-# so no more using the core ffmpeg formula
-brew tap justinmayer/tap
-brew install justinmayer/tap/ffmpeg --with-chromaprint --with-fdk-aac
-# includes support WebM: ffmpeg -i video.mp4 -strict -2 video.webm
+brew install --cask handbrake
+brew install ffmpeg
 
 # Screen recorder
 
-brew cask install kap
+brew install --cask kap
 
 # Other
 
-brew cask install evernote
-brew cask install kindle
-brew cask install marshallofsound-google-play-music-player
-brew cask install omnidisksweeper
+brew install --cask evernote
+brew install --cask kindle
+
 
 # Sync brightness (based on build-in Macbook light sensor) to external monitors
-brew cask install lunar
+brew install --cask lunar
 
 
 # Security
 
-brew cask install knockknock
-brew cask install blockblock
-brew cask install taskexplorer
-brew cask install netiquette
-
-# Emulation tools
-
-#brew cask install virtualbox
+brew install --cask knockknock
+brew install --cask blockblock
+brew install --cask taskexplorer
+brew install --cask netiquette
+brew install --cask little-snitch
 
 # Useful scripts
 
@@ -133,7 +106,7 @@ brew install youtube-dl
 brew install bluetoothconnector
 
 
-brew cask install veracrypt
+brew install --cask veracrypt
 # VeraCrypt config: by default VeraCrypt will not alter the timestamp of the volume after it has been created
 # This will prevent Cloud syncing from recognizing changes to the volume, and prevent synchronization
 # So: 'uncheck' "Preserve modification timestamp of file containers"
@@ -149,5 +122,12 @@ ditto files/veracrypt-configuration.xml ~/"Library/Application Support/VeraCrypt
 brew tap buo/cask-upgrade
 
 
-brew tap homebrew/cask-drivers
-brew cask install bose-soundtouch
+
+#brew cask install hiddenbar
+#brew install --cask mirrordisplays
+#brew cask install tunnelblick
+#brew cask install cheatsheet
+# control Mac Media Keys
+#brew install --cask beardedspice
+#brew install --cask marshallofsound-google-play-music-player
+#brew install --cask ytmdesktop-youtube-music
