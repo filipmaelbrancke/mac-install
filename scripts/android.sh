@@ -1,11 +1,10 @@
 echo
 echo "Installing Android tools"
-brew cask install android-studio
-brew cask install android-file-transfer
-brew cask install jd-gui
+brew install --cask android-studio
+brew install --cask openmtp # official "Android File Transfer" app for macOS from Google comes with bugs
+brew install --cask jd-gui
 brew install apktool
 brew install dex2jar
 brew install jadx
-brew cask install realm-browser
 brew install scrcpy
-brew cask install android-platform-tools
+brew install --cask android-platform-tools
