@@ -5,7 +5,7 @@ My OS X on MacBook Pro install.
 ## Getting Started
 
 - Currently tested against [Big Sur](https://www.apple.com/macos/big-sur/)
-    - These scripts might work more or less on previous versions, down to [Sierra](http://www.apple.com/macos/sierra/), but are maintained with only the latest macOS in mind
+    - These scripts might work more or less on previous versions, down to [High Sierra](https://support.apple.com/en-us/HT211683), but are maintained with only the latest macOS in mind
 - Install [Xcode 12](https://itunes.apple.com/us/app/xcode/id497799835?mt=12)
 
 

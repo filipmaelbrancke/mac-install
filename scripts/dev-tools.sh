@@ -24,6 +24,7 @@ brew install --cask sequel-pro # mysql
 brew install --cask robo-3t # mongo
 brew install --cask db-browser-for-sqlite # sqlite
 brew install --cask postico # postgresql
+brew install --cask dbeaver-community # universal
 
 # Virtual machines
 brew install --cask virtualbox

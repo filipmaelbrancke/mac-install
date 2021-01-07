@@ -7,6 +7,5 @@ brew tap heroku/brew
 brew install heroku
 # AWS CLI
 brew install awscli
-
 # Azure CLI
 brew install azure-cli

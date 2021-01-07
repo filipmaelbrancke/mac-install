@@ -57,7 +57,7 @@ brew install --cask microsoft-teams
 # (Text) Editors
 
 brew install --cask sublime-text
-brew install --cask atomatom
+brew install --cask atom
 brew install macvim
 brew install --cask xmind
 brew install --cask vscodium
@@ -84,6 +84,7 @@ brew install --cask kap
 # Other
 
 brew install --cask evernote
+brew install --cask notion
 brew install --cask kindle
 
 
