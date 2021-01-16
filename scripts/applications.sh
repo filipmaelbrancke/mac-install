@@ -75,7 +75,7 @@ brew install --cask inkscape
 # Video
 
 brew install --cask handbrake
-brew install ffmpeg
+#brew install ffmpeg
 
 # Screen recorder
 

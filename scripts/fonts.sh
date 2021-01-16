@@ -4,6 +4,9 @@ echo "Installing fonts"
 # Installing fonts tap
 brew tap homebrew/cask-fonts
 
+# In the latest versions of XCode, svn is deprecated and no longer seems to work correctly. If this is universally true, install svn for the svn dependent font casks.
+brew install subversion
+
 # Fonts
 
 brew install font-inconsolata
