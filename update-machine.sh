@@ -10,7 +10,7 @@ echo "- Updating \"macOS\" -"
 softwareupdate --install --all
 
 echo
-echo "- Updating \"brew\" -"
+echo "- Updating \"brew\" formulas and casks -"
 brew update
 brew upgrade
 brew cleanup
@@ -27,10 +27,6 @@ apm clean
 echo
 echo "- Updating \"npm\" -"
 npm update -g
-
-echo
-echo "- Updating \"homebrew casks (via the brew-cask-upgrade tool)\" -"
-brew cu --cleanup
 
 END_DATE=$(date +"%d.%m.%Y | %H:%M:%S")
 ELAPSED=" $(($SECONDS / 3600))hrs $((($SECONDS / 60) % 60))min $(($SECONDS % 60))sec"
