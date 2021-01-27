@@ -99,6 +99,7 @@ brew install --cask blockblock
 brew install --cask taskexplorer
 brew install --cask netiquette
 brew install --cask little-snitch
+brew install --cask forticlient
 
 # Useful scripts
 
