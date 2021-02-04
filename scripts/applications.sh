@@ -71,6 +71,7 @@ brew install --cask abricotine
 # Graphics tools
 
 brew install --cask inkscape
+brew install --cask exifcleaner
 
 # Video
 

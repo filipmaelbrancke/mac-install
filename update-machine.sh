@@ -20,6 +20,11 @@ mas outdated
 echo “install with: mas upgrade”
 
 echo
+echo "- Updating \"SDKMAN installed SDKs\" -"
+source "$HOME/.sdkman/bin/sdkman-init.sh"
+sdk upgrade
+
+echo
 echo "- Updating \"apm\" -"
 apm update --no-confirm
 apm clean
