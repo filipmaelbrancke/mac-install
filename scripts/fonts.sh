@@ -21,6 +21,7 @@ brew tap homebrew/cask-fonts
 # brew cask install font-source-sans-pro
 
 # Fonts with programming ligatures
-brew cask install font-fira-code
-brew cask install font-hasklig
-brew cask install font-monoid
+brew install --cask font-fira-code
+brew install --cask font-hasklig
+brew install --cask font-monoid
+brew install --cask font-jetbrains-mono
