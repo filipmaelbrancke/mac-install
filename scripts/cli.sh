@@ -15,3 +15,6 @@ brew install awscli
 # brew install ccloud
 
 # brew install azure-cli
+
+# Kotlin interactive shell
+brew install ki
