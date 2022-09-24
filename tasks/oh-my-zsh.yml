@@ -1,0 +1,17 @@
+---
+- name: Install Oh-My-Zsh
+  shell: sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+  args:
+    creates: ~/.oh-my-zsh
+
+# Will be added again later by pulling the latest version of the repository
+- name: Remove .zshrc file
+  shell: rm ~/.zshrc
+  args:
+    removes: ~/.zshrc
+
+# https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh
+- name: Install ZSH Autosuggestions
+  git:
+    repo: "https://github.com/zsh-users/zsh-autosuggestions"
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
