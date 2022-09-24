@@ -1,0 +1,6 @@
+---
+- name: Copy .ssh folder
+  ansible.builtin.copy:
+    src: "{{ playbook_dir }}/files/.ssh"
+    dest: "~"
+    mode: '400'

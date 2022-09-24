@@ -1,0 +1,92 @@
+---
+downloads: ~/.ansible-downloads/
+
+# Set to 'true' to configure the Dock via dockutil.
+configure_dock: true
+dockitems_remove:
+  - Safari
+  - Mail
+  - Maps
+  - Photos
+  - FaceTime
+  - Calendar
+  - Contacts
+  - Reminders
+  - TV
+  - Music
+  - Podcasts
+  - 'App Store'
+
+configure_dotfiles: true
+dotfiles_repo: https://github.com/timrijckaert/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/Documents/dotfiles
+dotfiles_files:
+  - .zshrc
+  - .gitconfig
+
+homebrew_installed_packages:
+  - awscli
+  - magic-wormhole
+  - scrcpy
+  - wget
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+  - homebrew/cask-versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - 1password7
+  - affinity-photo
+  - alfred
+  - charles
+  - db-browser-for-sqlite
+  - docker
+  #  - flutter
+  - google-cloud-sdk
+  - google-chrome
+  - iterm2
+  - jetbrains-toolbox
+  - jd-gui
+  # Updated to version 3 has become payed
+  #  - kaleidoscope
+  - ngrok
+  - resilio-sync
+  - visual-studio-code
+  - vlc
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 1529448980, name: "Reeder 5." }
+  - { id: 1528890965, name: "TextSniper" }
+# Assuming we are already logged in manually with our Apple ID
+mas_email: ""
+mas_password: ""
+
+configure_osx: true
+osx_script: "{{ playbook_dir }}/.osx --no-restart"
+
+# Install packages from other package managers.
+# Note: You are responsible for making sure the required package managers are
+# installed, eg. through homebrew.
+composer_packages: [ ]
+# - name: drush
+#   state: present # present/absent, default: present
+#   version: "^8.1" # default: N/A
+gem_packages: [ ]
+# - name: bundler
+#   state: present # present/absent/latest, default: present
+#   version: "~> 1.15.1" # default: N/A
+npm_packages: [ ]
+# - name: webpack
+#   state: present # present/absent/latest, default: present
+#   version: "^2.6" # default: N/A
+pip_packages: [ ]
+# - name: mkdocs
+#   state: present # present/absent/latest, default: present
+#   version: "0.16.3" # default: N/A
+
+# Glob pattern to ansible task files to run after all other tasks are finished.
+post_provision_tasks: [ ]
