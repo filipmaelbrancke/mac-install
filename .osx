@@ -45,6 +45,7 @@ defaults write com.apple.Spotlight "NSStatusItem Visible Item-0" 0
 defaults write $HOME/Library/Preferences/com.apple.systemuiserver.plist "NSStatusItem Visible Siri" -bool true
 
 # Bluetooth
+# Does not seem to work
 defaults write com.apple.Spotlight "NSStatusItem Visible Bluetooth" 1
 
 # Show Battery Percentage
@@ -220,6 +221,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 
+# Seems to be broken in Monterey
 # Use column view in all Finder windows by default
 # Four-letter codes for the other view modes:
 #   - clmv: Column view
