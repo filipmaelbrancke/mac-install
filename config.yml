@@ -35,6 +35,7 @@ homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-versions
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -50,6 +51,7 @@ homebrew_cask_apps:
   - iterm2
   - jetbrains-toolbox
   - jd-gui
+  - logitech-options
   # Updated to version 3 has become payed
   #  - kaleidoscope
   - ngrok
