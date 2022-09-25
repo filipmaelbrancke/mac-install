@@ -29,6 +29,7 @@ homebrew_installed_packages:
   - awscli
   - magic-wormhole
   - scrcpy
+  - speedtest-cli
   - wget
 
 homebrew_taps:
