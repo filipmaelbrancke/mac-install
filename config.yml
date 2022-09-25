@@ -30,6 +30,7 @@ homebrew_installed_packages:
   - magic-wormhole
   - scrcpy
   - speedtest-cli
+  - tree
   - wget
 
 homebrew_taps:
