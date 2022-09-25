@@ -45,8 +45,14 @@ defaults write com.apple.Spotlight "NSStatusItem Visible Item-0" 0
 defaults write $HOME/Library/Preferences/com.apple.systemuiserver.plist "NSStatusItem Visible Siri" -bool true
 
 # Bluetooth
-# Does not seem to work
-defaults write com.apple.Spotlight "NSStatusItem Visible Bluetooth" 1
+# 18: show
+# 24: hide
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
+
+# Sound/Volume
+# 18: show
+# 24: hide
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18
 
 # Show Battery Percentage
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
