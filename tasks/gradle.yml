@@ -1,5 +1,7 @@
 ---
 - name: Copy .gradle/init file
-  ansible.builtin.copy:
+  ansible.builtin.file:
     src: "{{ playbook_dir }}/files/.gradle/init.gradle"
     dest: "~/.gradle/init.gradle"
+    state: link
+    force: yes

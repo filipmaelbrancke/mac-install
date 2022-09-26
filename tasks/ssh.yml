@@ -1,6 +1,7 @@
 ---
-- name: Copy .ssh folder
-  ansible.builtin.copy:
+- name: Symlink ~/.ssh/ folder
+  ansible.builtin.file:
+    dest: "~/.ssh"
     src: "{{ playbook_dir }}/files/.ssh"
-    dest: "~"
-    mode: '400'
+    state: link
+    force: yes
