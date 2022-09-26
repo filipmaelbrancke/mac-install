@@ -58,6 +58,7 @@ homebrew_cask_apps:
   #  - kaleidoscope
   - ngrok
   - resilio-sync
+  - slack
   - visual-studio-code
   - vlc
 

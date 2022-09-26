@@ -120,6 +120,10 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # 'Tap to click'
 defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
 
+# Enable Fn keys by default
+defaults write -g com.apple.keyboard.fnState -bool true
+# defaults write "Apple Global Domain" "com.apple.keyboard.fnState" "1"
+
 # Haptic feedback
 # 0: Light
 # 1: Medium
