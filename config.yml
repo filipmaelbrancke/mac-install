@@ -28,6 +28,7 @@ homebrew_installed_packages:
   - magic-wormhole
   - scrcpy
   - speedtest-cli
+  - svgo
   - tree
   - wget
 
