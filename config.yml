@@ -53,8 +53,7 @@ homebrew_cask_apps:
   - jetbrains-toolbox
   - jd-gui
   - logitech-options
-  # Updated to version 3 has become payed
-  #  - kaleidoscope
+  - kaleidoscope
   - ngrok
   - resilio-sync
   - slack
