@@ -25,6 +25,7 @@
       tags: ['dock']
   tasks:
     - import_tasks: tasks/ssh.yml
+    - import_tasks: tasks/gradle.yml
     - import_tasks: tasks/osx.yml
       when: configure_osx
       tags: ['osx']

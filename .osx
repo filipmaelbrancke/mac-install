@@ -45,7 +45,14 @@ defaults write com.apple.Spotlight "NSStatusItem Visible Item-0" 0
 defaults write $HOME/Library/Preferences/com.apple.systemuiserver.plist "NSStatusItem Visible Siri" -bool true
 
 # Bluetooth
-defaults write com.apple.Spotlight "NSStatusItem Visible Bluetooth" 1
+# 18: show
+# 24: hide
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Bluetooth -int 18
+
+# Sound/Volume
+# 18: show
+# 24: hide
+defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist Sound -int 18
 
 # Show Battery Percentage
 defaults write ~/Library/Preferences/ByHost/com.apple.controlcenter.plist BatteryShowPercentage -bool true
@@ -113,12 +120,21 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 # 'Tap to click'
 defaults -currentHost write -globalDomain com.apple.mouse.tapBehavior -int 1
 
+# Enable Fn keys by default
+defaults write -g com.apple.keyboard.fnState -bool true
+# defaults write "Apple Global Domain" "com.apple.keyboard.fnState" "1"
+
 # Haptic feedback
 # 0: Light
 # 1: Medium
 # 2: Firm
 defaults write com.apple.AppleMultitouchTrackpad FirstClickThreshold -int 0
 defaults write com.apple.AppleMultitouchTrackpad ActuationStrength -int 0
+
+# Tracking Speed
+# 0: Slow
+# 3: Fast
+defaults write NSGlobalDomain com.apple.trackpad.scaling -float 1.0
 
 # Trackpad: map bottom right corner to right-click (requires restart!)
 # defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
@@ -220,6 +236,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy -c "Set :FK_StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 /usr/libexec/PlistBuddy -c "Set :StandardViewSettings:IconViewSettings:iconSize 64" ~/Library/Preferences/com.apple.finder.plist
 
+# Seems to be broken in Monterey
 # Use column view in all Finder windows by default
 # Four-letter codes for the other view modes:
 #   - clmv: Column view

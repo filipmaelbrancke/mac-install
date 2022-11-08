@@ -5,11 +5,9 @@ downloads: ~/.ansible-downloads/
 configure_dock: true
 dockitems_remove:
   - Safari
-  - Mail
   - Maps
   - Photos
   - FaceTime
-  - Calendar
   - Contacts
   - Reminders
   - TV
@@ -29,12 +27,16 @@ homebrew_installed_packages:
   - awscli
   - magic-wormhole
   - scrcpy
+  - speedtest-cli
+  - svgo
+  - tree
   - wget
 
 homebrew_taps:
   - homebrew/core
   - homebrew/cask
   - homebrew/cask-versions
+  - homebrew/cask-drivers
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -50,10 +52,12 @@ homebrew_cask_apps:
   - iterm2
   - jetbrains-toolbox
   - jd-gui
-  # Updated to version 3 has become payed
-  #  - kaleidoscope
+  - logitech-options
+  - kaleidoscope
   - ngrok
+  - paletro
   - resilio-sync
+  - slack
   - visual-studio-code
   - vlc
 
