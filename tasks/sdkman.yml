@@ -11,18 +11,18 @@
     line: 'sdkman_auto_answer=true'
     backrefs: yes
 
-- name: Install Java 8
-  shell: >-
-    . ~/.sdkman/bin/sdkman-init.sh &&
-    sdk install java 8.0.345-tem
-  args:
-    executable: /bin/bash
-  register: sdk_install
-  changed_when: >-
-    'is already installed.' not in sdk_install.stdout
-  failed_when: >-
-    sdk_install.rc != 0 and
-    'is already installed.' not in sdk_install.stdout
+# - name: Install Java 8
+#   shell: >-
+#     . ~/.sdkman/bin/sdkman-init.sh &&
+#     sdk install java 8.0.345-tem
+#   args:
+#     executable: /bin/bash
+#   register: sdk_install
+#   changed_when: >-
+#     'is already installed.' not in sdk_install.stdout
+#   failed_when: >-
+#     sdk_install.rc != 0 and
+#     'is already installed.' not in sdk_install.stdout
 
 - name: Install Java 11
   shell: >-

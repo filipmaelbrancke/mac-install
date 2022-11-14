@@ -41,7 +41,7 @@ homebrew_taps:
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - 1password7
-  - affinity-photo
+#  - affinity-photo
   - alfred
   - charles
   - db-browser-for-sqlite
