@@ -16,13 +16,13 @@
     executable: "{{ item.executable | default(omit) }}"
   loop: "{{ npm_packages }}"
 
-- name: Install global Pip packages.
+- name: Install global PipX packages.
   pip:
     name: "{{ item.name | default(item) }}"
     state: "{{ item.state | default('present') }}"
     version: "{{ item.version | default(omit) }}"
-    executable: "{{ item.executable | default('pip3') }}"
-  loop: "{{ pip_packages }}"
+    executable: "{{ item.executable | default('pipx') }}"
+  loop: "{{ pipx_packages }}"
 
 - name: Install global Ruby gems.
   gem:
