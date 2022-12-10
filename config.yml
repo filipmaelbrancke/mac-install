@@ -57,7 +57,9 @@ homebrew_cask_apps:
   - logitech-options
   - kaleidoscope
   - ngrok
+  - obsidian
   - paletro
+  - rapidapi
   - resilio-sync
   - slack
   - visual-studio-code
