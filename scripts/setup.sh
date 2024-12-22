@@ -47,5 +47,6 @@ source ${MY_DIR}/dev-tools.sh
 source ${MY_DIR}/appstore.sh
 source ${MY_DIR}/configurations.sh
 source ${MY_DIR}/kafka.sh
+source ${MY_DIR}/rust.sh
 
 source ${MY_DIR}/finished.sh

@@ -13,6 +13,9 @@ echo
 echo "- Updating \"brew\" formulas and casks -"
 brew update
 brew upgrade
+# when unable to pin an old version of an app:
+# https://apple.stackexchange.com/questions/435901/homebrew-how-to-ignore-cask-formula-on-brew-upgrade-since-pin-has-no-c
+# brew upgrade $(brew list | grep --invert-match hashicorp-boundary-desktop)
 brew cleanup
 
 echo “you can hit mas upgrade to upgrade theses apps from the app store:”
@@ -23,11 +26,12 @@ echo
 echo "- Updating \"SDKMAN installed SDKs\" -"
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk upgrade
+sdk selfupdate
 
-echo
-echo "- Updating \"apm\" -"
-apm update --no-confirm
-apm clean
+# echo
+# echo "- Updating \"apm\" -"
+# apm update --no-confirm
+# apm clean
 
 echo
 echo "- Updating \"npm\" -"

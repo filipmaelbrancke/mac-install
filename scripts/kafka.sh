@@ -1,4 +1,7 @@
-brew install kafkacat
+echo
+echo "Installing Kafka Development tools"
+
+brew install kcat
 
 # install kafkactl tap repostory
 brew tap deviceinsight/packages

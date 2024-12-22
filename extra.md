@@ -34,6 +34,14 @@ To map Escape to Caps Lock, do the following:
 
 ---
 
+## Disable unhandy macOS shortcuts
+macOS runs by default with a whole host of predefined shortcuts.
+
+For me, at least disable:
+* the key binding for the _Search man Page Index in Terminal_ feature (System Preferences | Keyboard | Shortcuts | Services)
+
+---
+
 ## Tune auto-starting applications
 Skype seems to think it is important enough to enjoy auto startup:
 

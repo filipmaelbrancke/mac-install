@@ -32,8 +32,10 @@ brew install --cask vnc-viewer
 brew install --cask calibre
 brew install --cask anki
 brew install --cask libreoffice
-brew install --cask aerial
-
+brew install bat
+brew install --cask audacity
+brew install --cask numi
+brew install --cask localsend
 
 # Terminals
 
@@ -45,14 +47,22 @@ brew install --cask google-chrome
 brew install --cask firefox
 brew install --cask tor-browser
 brew install --cask brave-browser
+brew tap homebrew/cask-versions && brew install --cask google-chrome-canary
+brew install --cask orion
+brew install --cask mullvad-browser
+brew install --cask arc
+brew install --cask browserosaurus
 
 # Communication
 
 brew install --cask slack
 brew install --cask ferdi
+brew install --cask signal
+brew install --cask discord
 
 brew install --cask telegram
 brew install --cask microsoft-teams
+brew install --cask zoom
 
 # (Text) Editors
 
@@ -62,16 +72,25 @@ brew install macvim
 brew install --cask xmind
 brew install --cask vscodium
 brew install --cask brackets
+brew install --cask hex-fiend
+brew install --cask lapce
 
 # Markdown
 brew install --cask marked
 brew install --cask macdown
-brew install --cask abricotine
+brew install --cask obsidian
+
+brew install --cask notion
 
 # Graphics tools
 
 brew install --cask inkscape
 brew install --cask exifcleaner
+brew install qview
+brew install --cask xnviewmp
+brew install zint
+brew install imagemagick
+brew install --cask autodesk-fusion360
 
 # Video
 
@@ -87,6 +106,7 @@ brew install --cask kap
 brew install --cask evernote
 brew install --cask notion
 brew install --cask kindle
+brew install --cask commander-one
 
 
 # Sync brightness (based on build-in Macbook light sensor) to external monitors
@@ -100,13 +120,19 @@ brew install --cask blockblock
 brew install --cask taskexplorer
 brew install --cask netiquette
 brew install --cask little-snitch
-brew install --cask forticlient
+brew install secretive
+brew install ssss
+brew install openconnect
 
 # Useful scripts
 
-brew install youtube-dl
+# Media
+
+brew install yt-dlp/taps/yt-dlp
 # https://github.com/lapfelix/BluetoothConnector/ : connect/disconnect Bluetooth devices
 brew install bluetoothconnector
+brew install --cask yt-music
+brew install --cask notunes
 
 
 brew install --cask veracrypt
@@ -126,11 +152,10 @@ brew tap buo/cask-upgrade
 
 
 
-#brew cask install hiddenbar
+brew install --cask hiddenbar
 #brew install --cask mirrordisplays
 #brew cask install tunnelblick
 #brew cask install cheatsheet
 # control Mac Media Keys
 #brew install --cask beardedspice
 #brew install --cask marshallofsound-google-play-music-player
-#brew install --cask ytmdesktop-youtube-music
